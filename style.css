@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  background-color: #2c3333;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* Container */
+#container {
+  background-color: #1971c2;
+  height: 100vh;
+}
+/* Navbar */
+.nav {
+  display: flex;
+  z-index: 10;
+  gap: 2em;
+  justify-content: center;
+  text-align: center;
+  background-color: #2e4f4f;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  height: 10%;
+  left: 20%;
+  width: 60vw;
+  top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px #cbe4de;
+}
+
+@media (max-width: 750px) {
+  .nav {
+    left: 15%;
+    width: 70%;
+  }
+  .nav-link {
+    /*  */
+    font-size: 1vh;
+  }
+}
+.nav-link {
+  font-size: 2vh;
+  align-self: center;
+  text-decoration: none;
+  color: #cbe4de;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  background-color: #d0ebff;
+  border-radius: 5px;
+}
+.nav-link.current {
+  border-bottom: 2px solid #1971c2;
+}
+
+/* Jumbotron */
+.jumbotron {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/jumbotron.jpg");
+}
+.judul-header {
+  font-size: 18vw;
+  color: rgba(240, 255, 255, 0.642);
+}
+
+/* Content */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #2e4f4f;
+}
+
+.tulisan-content {
+  font-size: 3em;
+  color: #cbe4de;
+}
+
+.isi-content {
+  margin: 40px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-header {
+  height: 70%;
+  width: 100%;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.header-img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  border-radius: inherit;
+  transition: all ease-in-out 0.4s;
+}
+
+.card:hover .header-img:hover {
+  transform: scale(1.25) rotate(2deg);
+}
+
+.card-title {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 18px;
+  padding: 15px;
+}
+
+.card-title h1 {
+  font-family: "Catamaran", sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 30px;
+  padding: 0px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #2e4f4f;
+}
+
+.tulisan-gallery {
+  font-size: 3em;
+  color: #cbe4de;
+}
+
+.isi-gallery {
+  margin: 40px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+img {
+  height: 300px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #2e4f4f;
+}
+
+h2 {
+  font-size: 3em;
+  color: #cbe4de;
+}
